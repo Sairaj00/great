@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<cs50.h>
+
+int main(void)
+{
+    int x = get_int("x:");
+    int y = get_int("y:");
+    int z = get_int("z:");
+
+if (x<z && y<z)
+{
+    printf("%i is the greatest integer\n",z );
+}
+else if (x<y && z<y)
+{
+    printf("%i is the greatest integer\n",y);
+}
+else if (y<x && z<x)
+{
+    printf("%i is the greatest integer\n",x);
+}
+else if (y==z && x==y && z==x)
+{printf("all are the same\n");}
+
+else
+{
+    printf("only type integers\n");
+}
+}
